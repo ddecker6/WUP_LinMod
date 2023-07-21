@@ -148,6 +148,14 @@ cor(SIMS~ARM+GRIP,data=data)
   
 ### Inferential  (Build 2-dimentional model.3)
 
+
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+This model has a residual standard error is 1.144 and an adjusted r squared of 0.5358. This is the best residual error in comparison to the other models. The model is SIMS= 0.037311 * ARM + 0.024470 * GRIP - 5.433871.
+
 #### predict model.3 at target point
   
 
