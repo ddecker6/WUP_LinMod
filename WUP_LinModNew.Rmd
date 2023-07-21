@@ -166,6 +166,18 @@ The prediction shows 0.1496476. The lowest is -2.132373 and the highest is 2.431
 
 ## Comparing nested models ANOVA Test
 
+```{r}
+anova(model.1,model.3)
+```
+
+
+```{r}
+anova(model.2,model.3)
+```
+
+
+Model 3 is better than model 1 and 2 because of the low P-value. The lower the P-value, thats how we can tell.
+
 ### Model.1 vs Model.3
 ### Model.2 vs Model.3
 
