@@ -126,7 +126,15 @@ The interval is now -3.107961 to 2.035652.
 
 #### now add the model fit to our plot for model.2
   
-
+```{r}
+mygrip <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  labs(title = "SIMS and GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
+mygrip +
+geom_smooth(method=lm)
+``` 
+This is with a model fit line to show correlation. 
 
 ## Model 3 SIM~ARM+GRIP
 
