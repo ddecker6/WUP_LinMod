@@ -89,7 +89,15 @@ This plot has a line showing the correlation.
 
 ### Now add in scatterplot
 
+```{r}
+mygrip <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  labs(title = "SIMS and GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
 
+mygrip
+```
+In this graph we are now looking at SIMS and GRIP.
 
 ### Numerical results 
 
