@@ -138,9 +138,13 @@ This is with a model fit line to show correlation.
 
 ## Model 3 SIM~ARM+GRIP
 
+
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+  The correlation is larger than SIMS~GRIP and SIMS~ARM. With all three added up, the numerical results are 0.7326545.
   
 ### Inferential  (Build 2-dimentional model.3)
 
