@@ -158,6 +158,11 @@ This model has a residual standard error is 1.144 and an adjusted r squared of 0
 
 #### predict model.3 at target point
   
+```{r}
+predict.lm(model.3, mydata, interval="prediction")
+```
+
+The prediction shows 0.1496476. The lowest is -2.132373 and the highest is 2.431668.
 
 ## Comparing nested models ANOVA Test
 
