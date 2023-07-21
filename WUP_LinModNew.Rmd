@@ -75,10 +75,20 @@ The value that was predicted was 0.7063836. The lowest is -1.726209 and the high
 
 #### scatterplot with model fit
   
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  labs(title = "SIMS and ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+basicNN +
+geom_smooth(method=lm)
+``` 
+This plot has a line showing the correlation.
 
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
+
 
 
 ### Numerical results 
